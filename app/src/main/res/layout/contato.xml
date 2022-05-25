@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="259dp"
+            android:layout_marginTop="10dp"
+            android:scaleX="1.4"
+            android:scaleY="1.4"
+            app:srcCompat="@drawable/pizza" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Endereço:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button">
+
+            <TextView
+                android:id="@+id/rua"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Rua Jacob, 319 -
+                Jardim Tranquilidade
+                Guarulhos - SP, 07051-020"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button2"
+                android:text="Ver no Mapa"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Telefone:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="(11) 2422-3194"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnLigar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button2"
+                android:onClick="Call"
+                android:text="Ligar"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#A60C0B08"
+            android:textColor="#000000" />
+
+
+        <Button
+            android:id="@+id/btnSobre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="#00000000"
+            android:text="Sobre nós"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btnHorario1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/txtNomeUsuario"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#00000000"
+            android:text="Horario de Atendimento"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fundo"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        app:srcCompat="@drawable/pizza"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/lblmsg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#F4EFEF"
+        android:text="Nome:" />
+
+    <EditText
+        android:id="@+id/txtNomeCad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="textPersonName"
+        android:textColor="#F4EFEF"
+        android:theme="@style/Theme"/>
+
+    <TextView
+        android:id="@+id/lblmsg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#F4EFEF"
+        android:text="E-mail:" />
+
+    <EditText
+        android:id="@+id/txtEmailCad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:theme="@style/Theme"
+        android:textColor="#F4EFEF"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/lblmsg3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#F4EFEF"
+        android:layout_marginHorizontal="50dp"
+        android:text="Senha:" />
+
+    <EditText
+        android:id="@+id/txtSenhaCad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#F4EFEF"
+        android:theme="@style/Theme"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/lblmsg4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#F4EFEF"
+        android:text="Confirma Senha:" />
+
+    <EditText
+        android:id="@+id/txtConfSenhaCad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="#F4EFEF"
+        android:theme="@style/Theme"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:text="Cadastrar" />
+</LinearLayout>
